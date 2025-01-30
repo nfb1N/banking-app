@@ -3,6 +3,7 @@ package com.banking.app.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,7 +13,7 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Builder
 @Table(name = "bank_accounts")
 public class BankAccount {
     @Id
